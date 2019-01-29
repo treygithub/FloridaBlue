@@ -3,7 +3,6 @@ import Search from './Search'
 import AddItem from './AddItem'
 import ClearAll from './ClearAll'
 
-
 class NeedToBuy extends Component {
   constructor(props){
     super(props);
@@ -23,12 +22,26 @@ componentDidMount(){
   } catch (e){
       console.log('error', e)
   }
+
+  try{
+    const json = localStorage.getItem('cart');
+    const cart = JSON.parse(json);
+    if(cart){
+    this.setState(()=>({cart}))
+    }
+  } catch (e){
+      console.log('error', e)
+  }
 }
 
 componentDidUpdate(prevProps,prevState){
   if(prevState.text.length !== this.state.text.length){
     const json = JSON.stringify(this.state.text);
     localStorage.setItem('text',json);
+  }
+  if(prevState.cart.length !== this.state.cart.length){
+    const json = JSON.stringify(this.state.cart);
+    localStorage.setItem('cart',json);
   }
 }
 
@@ -65,6 +78,15 @@ deleteItem = (id) =>{
   }
 }
 
+addToCart = (e) => {
+  let tempProducts = [...this.state.cart]
+  tempProducts = tempProducts.concat(e)
+  this.setState((state)=>{
+    return {cart: tempProducts}
+  })
+    console.log('this.state.cart', this.state.cart)
+  }
+
 
 
 render() {
@@ -98,7 +120,7 @@ render() {
               <h3 className="list-title">Need To Buy List</h3>
             </div>
             <div className="list-items">
-              <Search deleteItem={this.deleteItem} text={text}/>
+              <Search addToCart={this.addToCart} deleteItem={this.deleteItem} text={text}/>
             </div>
           </div>
 

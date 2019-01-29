@@ -19,11 +19,13 @@ Also Hosted live @
 4. Delete item from need to buy list
 5. Delete whole list from need to buy list
 6. error handle - cant add same item to need to buy list
-7. conditional render of cart component or if empty than emnpty cart component
+7. conditional render of cart component or empty cart component
 8. Locale Storage for data persistance 
 9. Mobile Responsive Media query's
 10. ES6 / 7 javascript
 11. life cycle hooks
 12. functional components / state-full components
-13. 
-14.
+13. error check add text before clicking add item to need to buy list (try adding empty value)
+14. add A search filter!!!
+15. add too CART!!!
+16. DELETE from cart!!
