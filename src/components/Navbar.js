@@ -6,23 +6,23 @@ import { Button } from 'reactstrap';
 export default class Navbar extends Component {
   render() {
     return (
-      <nav className="navbar navbar-expand-sm navbar-dark px-sm-5">
+      <nav style={{marginTop:"10px"}} className="navbar navbar-expand-sm navbar-dark px-sm-5">
         <Link to="/">
             <i style={{fontSize : "32px"}} className="fas fa-shopping-basket"></i>
         </Link>
-        <ul className="navbar-nav align-items-center">
+        <ul className="navbar-nav align-items-center hide-me-trey">
           <li className="nav-item ml-5">
-              <Link style={{color : "gray"}} to="/" className="nav-link">
-                Need To Buy
+              <Link style={{color : "gray", fontSize:"1.5em", fontWeight:"bold"}} to="/" className="nav-link">
+                Grocery Shopify Co
               </Link>
           </li>
         </ul>
         <Link to="/cart" className="ml-auto">
-          <Button>
+          <Button className="btn-media-q">
             <span className="mr-2">
               <i className="fas fa-cart-plus"/>
             </span>
-              In My Cart
+              My Cart
           </Button>
         </Link>
       </nav>

@@ -1,0 +1,12 @@
+
+@media only screen and (max-width: 700px) {
+    body {
+      background-color: rgb(221, 243, 250) !important;
+    }
+    .hide-me-trey{
+    display: none !important;
+    }
+    .btn-media-q{
+        background-color: #1E58AD !important;
+    }
+  }
