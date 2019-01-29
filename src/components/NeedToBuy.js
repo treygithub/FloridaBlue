@@ -122,7 +122,7 @@ render() {
             </div>
           </div>
 
-          <div className=" col-md-4 mx-auto list-container">
+          <div className="trey-p col-md-4 mx-auto list-container">
             <div className="list-title-container">
               <h3 className="list-title">Need To Buy List</h3>
             </div>
