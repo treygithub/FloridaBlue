@@ -21,7 +21,7 @@ handleOption = (e) => {
   render(){
   return (
     <div>
-      {this.state.error && <p>{this.state.error}</p>}
+      {this.state.error && <span style={{color:"red"}}>{this.state.error}</span>}
       <form onSubmit={this.handleOption}>
         <input type="text" name="textField"/>
         <Button type="submit" outline color="success">  
