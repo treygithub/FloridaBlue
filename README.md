@@ -29,3 +29,4 @@ Also Hosted live @ https://robert-hunnicutt-florida-blue.netlify.com
 14. add A search filter!!!
 15. add too CART!!!
 16. DELETE from cart!!
+17. Cannot add same item to cart

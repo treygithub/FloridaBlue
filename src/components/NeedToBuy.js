@@ -79,6 +79,11 @@ deleteItem = (id) =>{
 }
 
 addToCart = (e) => {
+  if(!e){
+    return "Enter an Item first!"
+  }else if (this.state.cart.indexOf(e) > -1 ) {
+      return 'This item already in list'
+  }
   let tempProducts = [...this.state.cart]
   tempProducts = tempProducts.concat(e)
   this.setState((state)=>{
