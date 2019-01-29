@@ -49,10 +49,23 @@ handleOption=(e)=>{
       })
   }
 
-
 handleReset=()=>{
   this.setState(()=>{return{text:[]}})
 }
+
+deleteItem = (id) =>{
+  console.log('id', id)
+  let tempProducts = [...this.state.text];
+
+  if (id > -1) {
+    tempProducts.splice(id,1)
+    this.setState(()=>{
+      return {text: tempProducts}
+    })
+  }
+}
+
+
 
 render() {
   let {text} = this.state
@@ -85,7 +98,7 @@ render() {
               <h3 className="list-title">Need To Buy List</h3>
             </div>
             <div className="list-items">
-              <Search text={text}/>
+              <Search deleteItem={this.deleteItem} text={text}/>
             </div>
           </div>
 

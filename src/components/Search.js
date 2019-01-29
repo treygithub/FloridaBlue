@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 
+
 class Search extends Component {
   constructor(props) {
     super(props);
@@ -24,7 +25,12 @@ class Search extends Component {
       })
       .map((e, i) => {
         return (
-          <li key={i}>{e}</li>
+          
+            <li index={i} key={i}>
+            {e}
+            <i style={{marginLeft:"10px", color:"red"}} className="fas fa-trash cart-icon" onClick={()=>this.props.deleteItem(i)}/>
+            </li>
+
         );
       });
 

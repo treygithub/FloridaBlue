@@ -15,11 +15,15 @@ Also Hosted live @
 
 1. React-Router-Dom
 2. Four views available Home, empty cart, cart, 404 page
-3. Add item to list to buy
-4. Delete item to buy
-5. Delete whole list to buy
-6. error handle - cant add same item to list
-7. conditional render of cart component or  empty cart component
+3. Add an item to need to buy list
+4. Delete item from need to buy list
+5. Delete whole list from need to buy list
+6. error handle - cant add same item to need to buy list
+7. conditional render of cart component or if empty than emnpty cart component
 8. Locale Storage for data persistance 
 9. Mobile Responsive Media query's
 10. ES6 / 7 javascript
+11. life cycle hooks
+12. functional components / state-full components
+13. 
+14.

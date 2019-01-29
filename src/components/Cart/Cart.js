@@ -6,9 +6,6 @@ export default class Cart extends Component {
   state={
     cart:[]
   }
-  componentDidMount(){
-
-  }
   render() {
     return (
         <section>
