@@ -30,3 +30,4 @@ Also Hosted live @ https://robert-hunnicutt-florida-blue.netlify.com
 15. add too CART!!!
 16. DELETE from cart!!
 17. Cannot add same item to cart
+18. no styling done really  some bootstrap / reactstrap

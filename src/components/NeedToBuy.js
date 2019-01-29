@@ -101,11 +101,13 @@ render() {
       <div className="row">
 
       <div className="col-md-4 mx-auto add-item-container hide-me-trey">
-      <h5>Welcome to you private shopping list </h5>
+      <h5>Welcome to your private shopping list </h5>
       <ul>
         <li>Shopping list are saved to local storage</li>
         <li>That Means We do-not collect any data!</li>
         <li>No sign-up or commitment</li>
+        <li>Please read the Readme file on git hub about this project</li>
+        <li>https://github.com/treygithub/FloridaBlue</li>
       </ul>
       </div>
      
