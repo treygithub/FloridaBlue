@@ -107,7 +107,7 @@ render() {
         <li>That Means We do-not collect any data!</li>
         <li>No sign-up or commitment</li>
         <li>Please read the Readme file on git hub about this project</li>
-        <li>https://github.com/treygithub/FloridaBlue</li>
+        <li><a target="_blank" href="https://github.com/treygithub/FloridaBlue">https://github.com/treygithub/FloridaBlue</a></li>
       </ul>
       </div>
      
