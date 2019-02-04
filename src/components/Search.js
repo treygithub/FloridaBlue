@@ -33,7 +33,7 @@ class Search extends Component {
             />
             <i style={{marginLeft:"10px", color:"green"}} 
             className="fas fa-cart-plus"
-            onClick={()=>this.props.addToCart(e)}
+            onClick={()=>this.props.addToCart(e,i)}
             />
             </li>
 

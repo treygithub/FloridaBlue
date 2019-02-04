@@ -63,7 +63,7 @@ handleOption=(e)=>{
   }
 
 handleReset=()=>{
-  this.setState(()=>{return{text:[]}})
+  this.setState(()=>({text:[]}))
 }
 
 deleteItem = (id) =>{
@@ -78,7 +78,7 @@ deleteItem = (id) =>{
   }
 }
 
-addToCart = (e) => {
+addToCart = (e,i) => {
   if(!e){
     return "Enter an Item first!"
   }else if (this.state.cart.indexOf(e) > -1 ) {
@@ -86,10 +86,11 @@ addToCart = (e) => {
   }
   let tempProducts = [...this.state.cart]
   tempProducts = tempProducts.concat(e)
-  this.setState((state)=>{
+  this.setState(()=>{
     return {cart: tempProducts}
-  })
-    console.log('this.state.cart', this.state.cart)
+  });
+    this.deleteItem(i)
+    console.log('this.state.cart', this.state.cart[0])
   }
 
 
@@ -105,11 +106,11 @@ render() {
       <ul>
         <li>Shopping list are saved to local storage</li>
         <li>That Means We do-not collect any data!</li>
-        <li>No sign-up or commitment</li>
+        <li>No sign-up or commitment</li> 
         <li>Please read the Readme file on git hub about this project</li>
-        <li><a target="_blank" href="https://github.com/treygithub/FloridaBlue">https://github.com/treygithub/FloridaBlue</a></li>
+        <li><a rel="noopener noreferrer" target="_blank" href="https://github.com/treygithub/FloridaBlue">https://github.com/treygithub/FloridaBlue</a></li>
       </ul>
-      </div>
+      </div>  
      
           <div className="col-md-4 mx-auto add-item-container">
             <div className="">

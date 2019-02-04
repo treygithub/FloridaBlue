@@ -15,7 +15,6 @@ class CartList extends Component {
             onClick={()=>this.props.deleteItem(i)}
             />
             </li>
-
         );
       });
 

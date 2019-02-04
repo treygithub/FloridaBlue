@@ -37,6 +37,7 @@ export default class Cart extends Component {
       this.setState(()=>{
         return {cart: tempProducts}
       })
+      
     }
   }
 

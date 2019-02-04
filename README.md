@@ -22,7 +22,7 @@ Also Hosted live @ https://robert-hunnicutt-florida-blue.netlify.com
 7. conditional render of cart component or empty cart component
 8. Locale Storage for data persistance 
 9. Mobile Responsive Media query's
-10. ES6 / 7 javascript
+10. ES6 / 8 javascript
 11. life cycle hooks
 12. functional components / state-full components
 13. error check add text before clicking add item to need to buy list (try adding empty value)
@@ -30,4 +30,5 @@ Also Hosted live @ https://robert-hunnicutt-florida-blue.netlify.com
 15. add too CART!!!
 16. DELETE from cart!!
 17. Cannot add same item to cart
-18. no styling done really  some bootstrap / reactstrap
+18. When adding item to cart, it is rtemoved from to buy list...
+19. no styling done really  some bootstrap / reactstrap / fontawesome.com
