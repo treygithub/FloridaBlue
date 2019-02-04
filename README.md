@@ -32,4 +32,4 @@ Also Hosted live @ https://robert-hunnicutt-florida-blue.netlify.com
 17. Cannot add same item to cart
 18. When adding item to cart, it is removed from Need to buy list...
 19. When deleting from cart, item will be pushed back to the need to by list!!!!
-20. no styling done really  some bootstrap / reactstrap / fontawesome.com
+20. no styling done really  some bootstrap / reactstrap / fontawesome.com this one is all about the functionality.
