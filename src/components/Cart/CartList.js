@@ -12,7 +12,7 @@ class CartList extends Component {
             {e}
             <i style={{marginLeft:"10px", color:"red"}} 
             className="fas fa-trash cart-icon" 
-            onClick={()=>this.props.deleteItem(i)}
+            onClick={()=>this.props.deleteItem(i,e)}
             />
             </li>
         );

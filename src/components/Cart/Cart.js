@@ -6,7 +6,8 @@ export default class Cart extends Component {
   constructor(props){
     super(props)
   this.state={
-    cart:[]
+    cart:[],
+    text:[]
   }
 }
   componentDidMount(){
@@ -19,6 +20,16 @@ export default class Cart extends Component {
     } catch (e){
         console.log('error', e)
     }
+
+    try{
+      const json = localStorage.getItem('text');
+      const text = JSON.parse(json);
+      if(text){
+      this.setState(()=>({text}))
+      }
+    } catch (e){
+        console.log('error', e)
+    }
   }
   
   componentDidUpdate(prevProps,prevState){
@@ -26,9 +37,24 @@ export default class Cart extends Component {
       const json = JSON.stringify(this.state.cart);
       localStorage.setItem('cart',json);
     }
+    if(prevState.text.length !== this.state.text.length){
+      const json = JSON.stringify(this.state.text);
+      localStorage.setItem('text',json);
+    }
   }
 
-  deleteItem = (id) =>{
+  handleOption=(e)=>{
+    if(!e){
+      return "Enter an Item first!"
+    }else if (this.state.text.indexOf(e) > -1 ) {
+        return 'This item already in list'
+    }
+      this.setState((prvState)=>{
+        return {text: prvState.text.concat(e)}
+      })
+  }
+
+  deleteItem = (id,e) =>{
     console.log('id', id)
     let tempProducts = [...this.state.cart];
     console.log('tempProducts', tempProducts)
@@ -37,7 +63,7 @@ export default class Cart extends Component {
       this.setState(()=>{
         return {cart: tempProducts}
       })
-      
+      this.handleOption(e)
     }
   }
 
